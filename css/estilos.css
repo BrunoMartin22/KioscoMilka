@@ -1,0 +1,291 @@
+/* etiquetas de estilo general */
+header{
+    background-color:  #6b4ba3;
+    text-align: start;
+}
+h1{
+    font-size: 70px;
+    color: white;
+    text-align:center;
+    text-decoration:underline;
+    margin: 0%;
+}
+p{
+    text-align: center;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    
+}
+body{
+    background-image: url(https://www.milka.es/-/media/Project/Brands/Milka/es/Banner/Banner-DESK.jpg?h=2006&w=2880&hash=0D14269E27F29118212E6F3DAD4718F4);
+    margin: 0px;
+    max-width: auto;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:center center;
+    text-align: center;
+}
+#textoCentrar{
+    text-align: center;
+}
+.imagenAcomodar{
+    height: 60%;
+    width: 60%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+/* baners de las paginas */
+#banerCarrito{
+    background-image: url(https://www.milka.es/-/media/Project/Brands/Milka/es/About-Milka/banner.jpg?h=800&w=1440&hash=440AE42228C4F1A731E308B46A5B3BB4);
+    background-size: 1900px;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:center center
+
+}
+#banerNuevo{
+    background-image: url(https://www.milka.es/-/media/Project/Brands/Milka/es/About-Milka/banner-about-milka.jpg?h=800&w=1440&hash=A86CE735EAE646578D96BC53A776DF08);
+    background-size: 1900px;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:center center;
+}
+#banerProductos{
+    background-size: 1900px;
+    background-image: url(https://www.milka.es/-/media/Project/Brands/Milka/es/Product-Catalog/banner-landschaft-fruehling.jpg?h=911&w=1440&hash=A25583946AF407792212AFE2F101E463);
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:center center;
+}
+.productosNuevos{
+    padding-bottom: 90vh;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-decoration: underline;
+}
+/* Decoracion de las letras */
+#letraFondo{
+    background-color: #6b4ba3;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0%;
+}
+/* Etiquetas para los botones de las paginas */
+a{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #6b4ba3;
+}
+.botn{
+    background-color:  #d9d5e8 ;
+    margin: 10px 30px 30px;
+    padding: 10px;
+    display: inline-block;
+    border: 5px solid #d9d5e8;
+    border-radius: 30px;
+}
+/* pie de pagina */
+footer{
+    background-color: #6b4ba3;;
+    padding: 7vh;
+    margin: 0vh;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+/* redes sociales */
+.wpp{
+    width: 100px;
+    height: 100px;
+    margin-right: 70px;
+}
+.facebook{
+    width: 100px;
+    height: 100px;
+}
+.insta{
+    width: 100px;
+    height: 100px;
+    margin-left: 70px;
+}
+/* Productos */
+.conteiner{
+    display: flex;
+    height: 1000px;
+    flex-flow:row wrap ;
+    justify-content: center;
+    align-content: center;
+}
+.caja{
+    margin: 120px;
+    text-align: center;
+}
+/* fotmulario de la parte contactanos */
+.formulario{
+    background-color:#d9d5e8 ;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+/* Responsive celular */
+@media screen and (min-width:320px) and (max-width:768px) {
+
+    .contenedor{
+        display: grid;
+        grid-template-areas:"main"
+                            "footer" ;
+        margin: 0px;
+    }
+    nav{
+        grid-area: nav;
+        padding-left:10%;
+        padding-right: 10%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    main{
+        grid-area: main;
+        align-items: center;
+    }
+    footer{
+        grid-area: footer;
+        padding: 5%;
+    }
+    h1{
+        font-size: 3em;
+        padding-top: 30px;
+    }
+    .conteiner{
+        display: grid;
+        height: 700px;
+        grid-template-columns: auto auto;
+        grid-column-gap: 20px;
+        padding-top: 15%;
+    }
+    .caja{
+        margin: 0%;
+        padding: 10%;
+        height: 50%;
+        text-align: center;
+    }
+    section a{
+        width: 40%;
+    }
+
+    #letraFondo{
+        margin-top: 20px;
+        font-size: 1.5em;
+    }
+    .formulario{
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-top: 20px
+    }
+
+    .botn{
+        display:block;
+        margin: 10px 30px 30px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .imgRespon{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .videoYoutube{
+        width: 30%;
+        height: 0px;
+        margin: auto;
+        padding: 30%;
+        text-align: center;
+        position: relative;
+    }
+    .videoYoutube iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+    .imagenAcomodar{
+        display: none;
+    }
+    .imagenNone{
+      display: none;
+    }
+    .wpp{
+        width: 15%;
+        height: 15%;
+    }
+    .insta{
+        width: 15%;
+        height: 15%;
+    }
+    .facebook{
+        width: 15%;
+        height: 15%;
+    }
+}
+/* Responsive tablet y escritorio */
+@media screen and (min-width:769px) and (max-width:1600px){
+    .contenedor{
+        display: grid;
+        grid-template-areas:"nav"
+                            "main" 
+                            "footer";
+        margin: 0px;
+    }
+    nav{
+        grid-area: nav;
+        padding-left:10%;
+        padding-right: 10%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    main{
+        grid-area: main;
+        text-align: center;
+    }
+    footer{
+        grid-area: footer;
+        padding: 7%;
+    }
+    h1{
+        font-size: 4em;
+        padding-top: 30px;
+    }
+    .botn{
+        margin: 0.5%;
+    
+        
+    }
+    .formulario{
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-top: 20px;
+
+    }
+    .conteiner{
+        display: grid;
+        height: 700px;
+        grid-template-columns: auto auto;
+        grid-column-gap: 300px;
+        padding-top: 5%;
+    }
+    .caja{
+        margin: 0%;
+        padding: 15%;
+        height: 50%;
+        text-align: center;
+    }
+
+}
